@@ -1,0 +1,37 @@
+
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+  
+   
+    
+}
+
+    body::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        background-color: aqua;
+        opacity: .50;
+        background-image: url("car.jpg");
+       
+    }
+
+
+.footer {
+    position: absolute;
+    background-color:aqua;
+    
+}

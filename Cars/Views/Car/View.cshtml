@@ -1,0 +1,39 @@
+﻿@model Cars.Models.UpdateCarViewModel
+@{
+}
+<h1>Edit Car</h1>
+<form method="post" action="View" class="mt-5">
+    
+       <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Model</label>
+        <input type="text" class="form-control" asp-for="Modell">
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Brand</label>
+        <input type="text" class="form-control" asp-for="Brand">
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Price</label>
+        <input type="number" class="form-control" asp-for="Price">
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Manufacture Date</label>
+        <input type="date" class="form-control" asp-for="ManufactureDate">
+
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Category</label>
+        <input type="text" class="form-control" asp-for="category">
+
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <button type="submit" class="btn btn-danger" asp-action="Delete" asp-controller="Car">Delete</button>
+</form>

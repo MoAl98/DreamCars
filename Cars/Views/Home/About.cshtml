@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<h1>@ViewData["Title"]</h1>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width" />
+    <title>About</title>
+</head>
+<body>
+ 
+ <h3>FOR 25 YEARS, DREAM CARS EXCLUSIVE HAS DELIVERED CARS TO SATISFIED CUSTOMERS ACROSS SWEDEN<br /> <br /></h3>
+ <h5> Our ambition is to deliver cars with the highest level of service based on our customers
+     high demands and wishes. The goal is to create and manage long-term and recurring customer relationships.​</h5>  
+ <h5> In our new exhibition of 3,000 square meters, we present a wide range of sports, convertible and family cars.</h5>
+ <h5>If you have any requests for a car you want to know more about, please contact us!<br /> <br /></h5>
+
+
+  <h4>What do you think of us, do you have suggestions, questions about the website or collaboration proposals, please contact us!<br /> <br />
+      For email contact, you can reach us via: <br /> customerservice@dreamcars.se or on our phone:0765555130 <br /> <br /> 
+      Address:<br /> DreamsCarsAB/DreamCars.se <br /> Box 443 <br /> 451 54 Uddevalla Sweden </h4>
+
+    <!--Here a function is created that prints a text when a button is pressed.-->
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('button1').addEventListener('click', clickHandler, false)
+        };
+
+        function clickHandler() {
+            document.write("Kontaktinformation <br /><br />");
+
+            document.write("What do you think of us, do you have suggestions, questions about the website or collaboration proposals, please contact us!<br /> <br /> For email contact, you can reach us via: <br /> customerservice@dreamcars.se or on our phone:0765555130 <br /> <br /> Address:<br /> DreamsCarsAB/DreamCars.se <br /> Box 443 <br /> 451 54 Uddevalla Sweden ");
+        }
+    </script>
+    <input type="button" id="button1" value="For contact" />
+</body>
+</html>
+

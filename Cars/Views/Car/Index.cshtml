@@ -1,0 +1,31 @@
+﻿@model List<Cars.Models.Domain.Car>
+@{
+}
+
+<h1>Our Cars</h1>
+<table class="table">
+    <thead>
+        <tr>         
+            <th>Model</th>
+            <th>Brand</th>
+            <th>Price</th>
+            <th>Manufacture Date</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var car in Model)
+        {
+          <tr>
+                
+                <td>@car.Modell</td>
+                <td>@car.Brand</td>
+                <td>@car.Price</td>
+                <td>@car.ManufactureDate.ToString("dd-MM-yyyy")</td>
+                <td>@car.category</td>
+                <td><a href="Car/View/@car.Id">View</a></td>
+          </tr>
+        }
+    </tbody>
+
+</table>
